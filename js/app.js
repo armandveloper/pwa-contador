@@ -27,6 +27,7 @@ function showNotification() {
 
 window.addEventListener('load', () => {
 	console.log('Probando notification');
+
 	Notification.requestPermission().then((result) => {
 		console.log(result);
 		if (result === 'granted') {
